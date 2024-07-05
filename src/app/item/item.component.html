@@ -1,7 +1,19 @@
 <article class="item">
-    <img [src]="item.image" alt="Item Image">
-    <div>
+    <aside class="side-image">
+        <img [src]="item.image" alt="Item Image">
+    </aside>
+    <aside class="side-details">
         <h3>{{item.title}}</h3>
-        <p>{{item.description}}</p>
-    </div>
+        <div class="side-details-information">
+            <div class="side-details-information-left">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="side-details-information-right">
+                <aside class="specs">
+                    <span>{{item.duration}}</span>
+                    <span>{{item.genre}}</span>
+                </aside>
+            </div>
+        </div>
+    </aside>
 </article>

@@ -1,11 +1,9 @@
 section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100dvw;
     height: 100dvh;
-    
 }
 
 nav{
