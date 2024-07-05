@@ -1,0 +1,19 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100dvw;
+    font-size: 25px;
+    gap: 20px;
+}

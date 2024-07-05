@@ -3,6 +3,6 @@ export interface User {
     name: string;
     username: string;
     email: string;
-    isLogged: boolean;
+    isLoggedIn: boolean;
     favs: number[];
 }

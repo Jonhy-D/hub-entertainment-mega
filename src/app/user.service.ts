@@ -11,7 +11,7 @@ export class UserService {
     name: 'Juan',
     username: 'JuanPanch',
     email: 'juan123@gmail.com',
-    isLogged: false,
+    isLoggedIn: false,
     favs: []
   }
 
