@@ -5,6 +5,7 @@
     border: 2px solid white;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 img{
@@ -13,11 +14,26 @@ img{
 }
 
 h3{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 p{
     font-size: 9px;
+}
+
+.side-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.side-details-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .side-details-information{
@@ -26,15 +42,6 @@ p{
     justify-content: center;
     align-items: center;
     gap: 5px;
-}
-
-.specs{
-    display: flex;
-    width: 60px;
-    height: 48px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .side-details-information-left{
@@ -46,6 +53,7 @@ p{
     height: 72px;
     overflow: auto;
     scrollbar-width: none;
+    text-wrap: pretty;
 }
 
 .side-details-information-right{
@@ -54,4 +62,36 @@ p{
     align-items: center;
     width: 80px;
     height: 72px;
+}
+
+.specs{
+    display: flex;
+    width: 60px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-details-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.button-watch{
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+    border: none;
+    background-color: midnightblue;
+    border-radius: 4px;
+}
+
+.button-hide{
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+    border: none;
+    background-color: red;
+    border-radius: 4px;
 }

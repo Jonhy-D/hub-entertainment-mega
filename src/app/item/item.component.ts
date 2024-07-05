@@ -11,4 +11,11 @@ import { CommonModule } from '@angular/common';
 
 export class ItemComponent {
   @Input() item: any;
+  onWatch(){
+    alert("You are watching")
+  }
+
+  setHide(){
+    alert("You hide the movie")
+  }
 }

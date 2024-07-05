@@ -3,7 +3,9 @@
         <img [src]="item.image" alt="Item Image">
     </aside>
     <aside class="side-details">
-        <h3>{{item.title}}</h3>
+        <div class="side-details-title">
+            <h3>{{item.title}}</h3>
+        </div>
         <div class="side-details-information">
             <div class="side-details-information-left">
                 <p>{{item.description}}</p>
@@ -14,6 +16,10 @@
                     <span>{{item.genre}}</span>
                 </aside>
             </div>
+        </div>
+        <div class="side-details-buttons">
+            <button (click)="onWatch()" class="button-watch">Watch</button>
+            <button (click)="setHide()" class="button-hide">Hide</button>
         </div>
     </aside>
 </article>

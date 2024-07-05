@@ -22,7 +22,25 @@ export class ItemListComponent {
     {
       id: 2,
       title: 'Kingdom of the Planet of the Apes',
-      description: 'ajklniofnoadfklasjmfkla',
+      description: 'In 2029, an Air Force astronaut crash-lands on a mysterious planet where evolved, talking apes dominate a race of primitive humans.',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8wqa3LtQG2hYDOLlJ20Jgy0yoiKPkvcw_qQ&s',
+      duration: '152 min',
+      genre: 'Fiction',
+      type: ''
+    },
+    {
+      id: 3,
+      title: 'Thor love and thunder',
+      description: 'The film follows Thor (Chris Hemsworth) on a journey unlike anything he has faced before: a search for inner peace.',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOyZD9CL1eGq1pKq4tPcXp6KX-iw5J2krnA&s',
+      duration: '160 min',
+      genre: 'Action',
+      type: ''
+    },
+    {
+      id: 4,
+      title: 'Kingdom of the Planet of the Apes',
+      description: 'In 2029, an Air Force astronaut crash-lands on a mysterious planet where evolved, talking apes dominate a race of primitive humans.',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8wqa3LtQG2hYDOLlJ20Jgy0yoiKPkvcw_qQ&s',
       duration: '152 min',
       genre: 'Fiction',
