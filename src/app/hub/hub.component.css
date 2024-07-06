@@ -6,12 +6,42 @@ section{
     height: 100dvh;
 }
 
-nav{
+header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    position: sticky;
+    z-index: 50;
+    top: 0;
+    height: 70px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
     width: 100dvw;
-    font-size: 25px;
+    font-size: 20px;
     gap: 20px;
+}
+
+a{
+    cursor: pointer;
+}
+
+#header-nav{
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 600px;
+}
+
+@keyframes blur {
+    to{
+        box-shadow:
+            0px 5px 50px -5px hsla(0, 0%, 100%, 0.1),
+            0px 0px 0px 1px hsla(0, 0%, 100%, 0.1);
+        background: rgba(10, 10, 10, 0.3);
+        backdrop-filter: blur(10px);
+    }
 }

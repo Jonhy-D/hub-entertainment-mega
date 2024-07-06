@@ -2,10 +2,12 @@
     display: flex;
     width: 300px;
     height: 200px;
-    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
     align-items: center;
     justify-content: center;
     gap: 5px;
+    background-color: rgba(34, 33, 33, 0.19);
 }
 
 img{
@@ -85,6 +87,7 @@ p{
     border: none;
     background-color: midnightblue;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .button-hide{
@@ -94,4 +97,5 @@ p{
     border: none;
     background-color: red;
     border-radius: 4px;
+    cursor: pointer;
 }
