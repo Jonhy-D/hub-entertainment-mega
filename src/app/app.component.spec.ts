@@ -14,7 +14,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'hub-entertainment-mega' title`, () => {
+  it(`should have the 'Hub Entertainment Mega' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('hub-entertainment-mega');
@@ -24,6 +24,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, hub-entertainment-mega');
+    expect(compiled.querySelector('header')?.textContent).toContain('GenresFavoritesSeriesMoviesSettings');
   });
 });

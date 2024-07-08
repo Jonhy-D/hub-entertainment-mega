@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Item } from '../item.service';
 
 @Component({
   selector: 'app-item',
@@ -10,12 +11,11 @@ import { CommonModule } from '@angular/common';
 })
 
 export class ItemComponent {
-  @Input() item: any;
-  onWatch(){
-    alert("You are watching")
+  @Input() item!: Item;
+  toggleWatch(){
+    alert(`You are watching ${this.item.title}`)
   }
-
-  setHide(){
-    alert("You hide the movie")
+  toggleHide(){
+    alert(`You hide ${this.item.title}`)
   }
 }
