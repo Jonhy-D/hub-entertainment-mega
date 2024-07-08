@@ -38,12 +38,4 @@ describe('ItemComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('span')?.textContent).toContain('160 min')
   })
-
-  it('should toggle Watch', () => {
-    expect(component.toggleWatch);
-  })
-
-  it('should toggle Hide', () => {
-    expect(component.toggleHide);
-  })
 });

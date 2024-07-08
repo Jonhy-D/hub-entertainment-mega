@@ -30,6 +30,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Images of Proyect
 
 The images are to see what the application would look like in different resolutions.
+
 - [Image 1](/public/image_1.png)
 - [Image 2](/public/image_2.png)
 - [Image 3](/public/image_3.png)
@@ -39,6 +40,14 @@ The images are to see what the application would look like in different resoluti
 | What was done well? | What can I do differently? | What didn't go well? |
 ------------------|----------------------------|-----------------------
 | Learn to use some Angular | Work a little more efficiently without as many errors | Some tests cannot be performed correctly |
+
+## Testing and Code Coverage
+
+These images are the tests and the code coverage of the applications and their functions.
+
+- [Image 1](/public/image_4.png)
+- [Image 2](/public/image_5.png)
+
 
 ## Build
 
