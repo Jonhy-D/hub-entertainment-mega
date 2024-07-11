@@ -11,5 +11,5 @@ import { HubComponent } from './hub/hub.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'hub-entertainment-mega';
+  title = 'Hub Entertainment Mega';
 }
