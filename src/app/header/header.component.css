@@ -1,10 +1,31 @@
+section{
+    position: relative;
+}
+
+.home-icon{
+    top: 30px;
+    left: 40px;
+    width: 40px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+    position: absolute;
+    fill: white;
+}   
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+
 ul{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     width: 100dvw;
-    font-size: 20px;
+    font-size: 17px;
     gap: 20px;
 }
 
@@ -28,5 +49,17 @@ a{
             0px 0px 0px 1px hsla(0, 0%, 100%, 0.1);
         background: rgba(10, 10, 10, 0.3);
         backdrop-filter: blur(10px);
+    }
+}
+
+@media(800px <= width <= 3000px){
+    #header-nav ul{
+        font-size: 20px;
+    }
+}
+
+@media(200px <= width <= 500px){
+    #header-nav ul{
+        font-size: 15px;
     }
 }

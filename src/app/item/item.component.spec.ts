@@ -38,4 +38,14 @@ describe('ItemComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('span')?.textContent).toContain('160 min')
   })
+
+  it(`should have show an alert`, () => {
+    const compiled = fixture.componentInstance;
+    expect(compiled.toggleHide).toBeTruthy()
+  })
+
+  it(`should have hide the element`, () => {
+    const compiled = fixture.componentInstance;
+    expect(compiled.toggleWatch).toBeTruthy()
+  });
 });

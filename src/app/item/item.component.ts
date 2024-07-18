@@ -13,9 +13,11 @@ import { Item } from '../item.service';
 export class ItemComponent {
   @Input() item!: Item;
   toggleWatch(){
-    alert(`You are watching ${this.item.title}`)
+    alert(`Your are watching ${this.item.title}`)
   }
   toggleHide(){
-    alert(`You hide ${this.item.title}`)
+    const id = this.item.id
+    const element = document.getElementById(id.toString())
+    element?.classList.toggle('hidden')
   }
 }

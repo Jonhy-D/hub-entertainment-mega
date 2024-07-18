@@ -1,3 +1,9 @@
 <section class="item-list">
-        <app-item *ngFor="let item of (items$ | async)" [item]="item"></app-item>
+        @for(item of items$ | async; track item.id){
+                <app-item [item]="item" [id]="item.id"></app-item>
+        }
+                <!-- @if(item.type === 'Movie'){
+                        <app-item [item]="item"></app-item>
+                } -->
+        <!-- <app-item *ngFor="let item of (items$ | async)" [item]="item"></app-item>  -->
 </section>

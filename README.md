@@ -3,7 +3,11 @@
 
 ## Description
 
-This project is an entertainment hub that will have movies, series and cartoons, it will have the functions of giving recommendations, saving favorites and seeing what you have seen, but it is still in development...
+This project is an entertainment hub that will have movies, series and cartoons, it will have the functions of giving recommendations, saving favorites and seeing what you have seen, but it is still in development.
+
+I will use RXJS for asynchronous threads and Karma with Jasmine to test this application.
+
+Speaking of testing, there are some images that show the code coverage of the application, this helps us know how much of the application is covered in testing.
 
 ## Technical requirements
 
@@ -26,14 +30,20 @@ Install the Angular CLI which provides tooling for effective Angular development
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## Sprint 2 and 3
+
+### Goals
+
+- Add the RXJS library to the project
+- Test all the functionalities of your application and that the code coverage is greater than 70%.
 
 ## Images of Proyect
 
 The images are to see what the application would look like in different resolutions.
 
-- [Image 1](/public/image_1.png)
-- [Image 2](/public/image_2.png)
-- [Image 3](/public/image_3.png)
+[Image 1](/public/image_1.png)
+[Image 2](/public/image_2.png)
+[Image 3](/public/image_3.png)
 
 ## Table Sprint Review
 

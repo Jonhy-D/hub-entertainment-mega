@@ -1,0 +1,11 @@
+@media(800px <= width <= 3000px){
+    #header-nav{
+        font-size: 15px;
+    }
+}
+
+@media(200px <= width <= 500px){
+    #header-nav{
+        font-size: 10px;
+    }
+}

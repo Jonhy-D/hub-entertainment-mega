@@ -24,7 +24,7 @@ export class ItemService {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOyZD9CL1eGq1pKq4tPcXp6KX-iw5J2krnA&s',
       duration: '160 min',
       genre: 'Action',
-      type: ''
+      type: 'Movie'
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export class ItemService {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8wqa3LtQG2hYDOLlJ20Jgy0yoiKPkvcw_qQ&s',
       duration: '152 min',
       genre: 'Sci-Fi',
-      type: ''
+      type: 'Movie'
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export class ItemService {
       image: 'https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/94/71/61/20350648.jpg',
       duration: '111 min',
       genre: 'Romance',
-      type: ''
+      type: 'Movie'
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ export class ItemService {
       image: 'https://es.web.img3.acsta.net/c_310_420/medias/nmedia/18/66/73/18/20350674.jpg',
       duration: '112 min',
       genre: 'Sci-Fi',
-      type: ''
+      type: 'Movie'
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ export class ItemService {
       image: 'https://es.web.img3.acsta.net/c_310_420/pictures/19/10/28/17/02/4637907.jpg',
       duration: '101 min',
       genre: 'Anime',
-      type: ''
+      type: 'Movie'
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ export class ItemService {
       image: 'https://es.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/75/99/20065447.jpg',
       duration: '121 min',
       genre: 'Drama',
-      type: ''
+      type: 'Serie'
     },
     {
       id: 7,
@@ -78,7 +78,7 @@ export class ItemService {
       image: 'https://es.web.img3.acsta.net/c_310_420/medias/nmedia/18/72/41/74/20198901.jpg',
       duration: '148 min',
       genre: 'Drama',
-      type: ''
+      type: 'Serie'
     },
     {
       id: 8,
@@ -87,7 +87,7 @@ export class ItemService {
       image: 'https://es.web.img2.acsta.net/c_310_420/pictures/22/08/11/16/01/1320092.jpg',
       duration: '115 min',
       genre: 'Anime',
-      type: ''
+      type: 'Serie'
     },
     {
       id: 9,
@@ -96,7 +96,7 @@ export class ItemService {
       image: 'https://es.web.img3.acsta.net/c_310_420/pictures/18/03/16/15/33/3988420.jpg',
       duration: '149 min',
       genre: 'Action',
-      type: ''
+      type: 'Serie'
     },
     {
       id: 10,
@@ -105,7 +105,7 @@ export class ItemService {
       image: 'https://es.web.img3.acsta.net/c_310_420/pictures/19/03/26/17/22/0896830.jpg',
       duration: '152 min',
       genre: 'Fiction',
-      type: ''
+      type: 'Serie'
     }
   ]);
   
