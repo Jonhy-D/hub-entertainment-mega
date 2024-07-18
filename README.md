@@ -30,7 +30,7 @@ Install the Angular CLI which provides tooling for effective Angular development
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Sprint 2 and 3
+# Sprint 2 and 3
 
 ### Goals
 
@@ -39,26 +39,40 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Images of Proyect
 
-The images are to see what the application would look like in different resolutions.
+The images are to see what the application would look like in differents devices.
 
-- Desktop
+- Desktop View
 ![Desktop View](/public/image_2.png)
+- IPad View
 ![IPad View](/public/image_1.png)
+- Mobile View
 ![Mobile View](/public/image_3.png)
-
-## Table Sprint Review
-
-| What was done well? | What can I do differently? | What didn't go well? |
-------------------|----------------------------|-----------------------
-| Learn to use some Angular | Work a little more efficiently without as many errors | Some tests cannot be performed correctly |
 
 ## Testing and Code Coverage
 
 These images are the tests and the code coverage of the applications and their functions.
 
-- [Image 1](/public/image_4.png)
-- [Image 2](/public/image_5.png)
+- Tests passed
+![Image 1](/public/image_4.png)
+- CMD Code Coverage
+![Image 2](/public/image_5.png)
 
+## Process
+
+I knew what I had to do, which are my Sprint Goals, so I started thinking about where I could implement it and how in the explanation it said that I could implement RXJS in the database data through a service called Item service and implementing it in my Item-List component, although I think I will use it in more places, that is how I decided to implement it.
+
+To carry out the tests I went from component to component checking the logic I had to be able to test my functions as in the explanation using Jasmine and doing a unit test for each function to be able to test and try to ensure that the application does not fail.
+
+## Issues
+
+- My problems were when doing the tests because I had never done a test on an application so it was a bit difficult for me but I had to do it to achieve my goals.
+- Perform testing when using asynchronous thread.
+
+## Table Sprint Review
+
+| What was done well? | What can I do differently? | What didn't go well? |
+------------------|----------------------------|-----------------------
+| Learn to use Angular from scratch since the learning curve is high but since you understand little you can continue advancing and not stagnate | Work a little more efficiently without so many errors but I suppose there will always be errors so also work without so much pressure. | Not being able to test the entire application and get 10% code coverage |
 
 ## Build
 
@@ -67,3 +81,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test --code-coverage` to execute code coverage.
