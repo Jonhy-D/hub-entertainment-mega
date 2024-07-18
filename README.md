@@ -41,9 +41,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 The images are to see what the application would look like in different resolutions.
 
-[Image 1](/public/image_1.png)
-[Image 2](/public/image_2.png)
-[Image 3](/public/image_3.png)
+- Desktop
+![Desktop View](/public/image_2.png)
+![IPad View](/public/image_1.png)
+![Mobile View](/public/image_3.png)
 
 ## Table Sprint Review
 
