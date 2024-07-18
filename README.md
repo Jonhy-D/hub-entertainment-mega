@@ -42,20 +42,29 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 The images are to see what the application would look like in differents devices.
 
 - Desktop View
-![Desktop View](/public/image_2.png)
+
+![Desktop View](/public/Desktop_View.webp)
 - IPad View
-![IPad View](/public/image_1.png)
+
+![IPad View](/public/IPad_View.webp)
 - Mobile View
-![Mobile View](/public/image_3.png)
+
+![Mobile View](/public/Mobile_View.webp)
 
 ## Testing and Code Coverage
 
 These images are the tests and the code coverage of the applications and their functions.
 
 - Tests passed
-![Image 1](/public/image_4.png)
+
+![Tests Passed](/public/Tests_Passed.webp)
+- Code Coverage
+
+![Code Coverage](/public/Code_Coverage.webp)
+!
 - CMD Code Coverage
-![Image 2](/public/image_5.png)
+
+![CMD Code Coverage](/public/CMD_CodeCoverage.webp)
 
 ## Process
 

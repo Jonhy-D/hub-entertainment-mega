@@ -41,7 +41,7 @@ describe('ItemComponent', () => {
 
   it(`should have show an alert`, () => {
     const compiled = fixture.componentInstance;
-    expect(compiled.toggleHide).toBeTruthy()
+    expect(compiled.toggleHide()).toBeTruthy()
   })
 
   it(`should have hide the element`, () => {
