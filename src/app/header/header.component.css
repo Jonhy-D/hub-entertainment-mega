@@ -56,10 +56,16 @@ a{
     #header-nav ul{
         font-size: 20px;
     }
+    #header-nav #home-icon{
+        width: 45px;
+    }
 }
 
 @media(200px <= width <= 500px){
     #header-nav ul{
         font-size: 15px;
+    }
+    #header-nav #home-icon{
+        width: 30px;
     }
 }
