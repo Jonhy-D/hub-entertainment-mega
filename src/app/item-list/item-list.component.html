@@ -1,6 +1,6 @@
 <section class="item-list">
-        @for(item of items$ | async; track item.id){
-                <app-item [item]="item" [id]="item.id"></app-item>
+        @for(item of items$ | async; track item.movieId){
+                <app-item [item]="item" [id]="item.movieId"></app-item>
         }
                 <!-- @if(item.type === 'Movie'){
                         <app-item [item]="item"></app-item>

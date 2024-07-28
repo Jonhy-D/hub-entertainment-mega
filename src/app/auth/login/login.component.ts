@@ -48,8 +48,8 @@ export class LoginComponent{
       })
   }
 
-  getUser(): number{
-    return this.userId_
+  getUser(): any{
+    return console.log(this.userId_)
   }
 
 }
