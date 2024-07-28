@@ -15,7 +15,7 @@ describe('ItemService', () => {
   });
 
   it('should return items', (done) =>{
-    service.getItems().subscribe(items =>{
+    service.getItemsMovies().subscribe(items =>{
       expect(items.length).toEqual(10);
       expect(items[3].genre).toEqual('Sci-Fi');
       done();

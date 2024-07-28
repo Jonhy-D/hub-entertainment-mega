@@ -20,7 +20,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 You need to have node.js, run the following command: `node --version` and npm installed, confirm that the version number displayed meets the requirements.
 
 ### Second Step: 
-Remember that after downloading or cloning the project you must stop at your project in the terminal and run: `npm install`
+
+Clone repository with this command:
+` git clone "URL repository"`
+Remember that after downloading or cloning the project you must stop at your project in the terminal and run: `npm install` to download your project's dependencies.
 
 ### Final Step 
 
@@ -79,7 +82,7 @@ To carry out the tests I went from component to component checking the logic I h
 
 ## Table Sprint Review
 
-| What was done well? | What can I do differently? | What didn't go well? |
+| **What was done well?** | **What can I do differently?** | **What didn't go well?** |
 ------------------|----------------------------|-----------------------
 | Learn to use Angular from scratch since the learning curve is high but since you understand little you can continue advancing and not stagnate | Work a little more efficiently without so many errors but I suppose there will always be errors so also work without so much pressure. | Not being able to test the entire application and get 10% code coverage |
 
