@@ -1,19 +1,18 @@
 <article class="item">
     <aside class="side-image">
-        <img [src]="item.movie_image" alt="Item Image">
+        <img [src]="item.serie_image" alt="Item Image">
     </aside>
     <aside class="side-details">
         <div class="side-details-title">
-            <h3>{{item.movie_title}}</h3>
+            <h3>{{item.serie_title}}</h3>
         </div>
         <div class="side-details-information">
             <div class="side-details-information-left">
-                <p>{{item.movie_description}}</p>
+                <p>{{item.serie_description}}</p>
             </div>
             <div class="side-details-information-right">
                 <aside class="specs">
-                    <span>{{item.movie_duration}}</span>
-                    <span>{{item.movie_genre}}</span>
+                    <span>{{item.serie_genre}}</span>
                 </aside>
             </div>
         </div>
@@ -23,6 +22,6 @@
         </div>
     </aside>
     <div class="icon_favorite">
-        <i (click)="addMovieFavorites()" class="uil uil-heart-alt"></i>
+        <i (click)="addSerieFavorites()" class="uil uil-heart-alt"></i>
     </div>
 </article>

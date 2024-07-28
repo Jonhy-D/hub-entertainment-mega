@@ -1,0 +1,10 @@
+<section class="item-list">
+    <!-- @for(item of (items$ | async); track item.serieId){
+            <app-item-serie [item]="item" [id]="item.serieId"></app-item-serie>
+    } -->
+            <!-- @if(item.type === 'Movie'){
+                    <app-item [item]="item"></app-item>
+            } -->
+    <app-item-serie *ngFor="let item of items$ | async" [item]="item"></app-item-serie>
+</section>
+

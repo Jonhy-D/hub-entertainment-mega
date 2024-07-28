@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ItemComponent } from '../item/item.component';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
-import { Item, ItemService } from '../item.service';
+import { ItemService } from '../item.service';
 
 @Component({
   selector: 'app-item-list',
@@ -13,11 +13,11 @@ import { Item, ItemService } from '../item.service';
 })
 export class ItemListComponent implements OnInit{
 
-  items$: Observable<Item[]> | undefined;
+  items$: Observable<any> | undefined;
 
   constructor(private ItemService: ItemService){}
 
   ngOnInit(): void {
-    this.items$ = this.ItemService.getItems();
+    this.items$ = this.ItemService.getItemsMovies();
   }
 }

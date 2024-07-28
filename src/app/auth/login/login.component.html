@@ -1,0 +1,14 @@
+<section>
+    <h1>Login</h1>
+    <form (ngSubmit)="sendLogin()" [formGroup]="formLogin" class="login-auth-form">
+        <label for="email">Email</label>
+        <input formControlName="email" type="text" placeholder="Email">
+        <label for="password" >Password</label>
+        <input formControlName="password" class="form-input" type="password" placeholder="Password">
+        <a class="forget-password" href="" target="_blank" rel="noopener">¿Did you forget your password?</a>
+        <div *ngIf="errorSession">
+            There was a problem with your email or password
+        </div>
+        <button [disabled]="formLogin.invalid" type="submit" class="bton-form-submit">Submit</button>
+    </form>
+</section>
