@@ -13,7 +13,7 @@ import { LoginComponent } from '../auth/login/login.component';
 
 export class ItemComponent {
   @Input() item!: ItemMovie;
-  @Input() user!: LoginComponent
+  @Input() user!: LoginComponent;
 
   toggleWatch(){
     alert(`Your are watching ${this.item.movie_title}`)
@@ -23,7 +23,8 @@ export class ItemComponent {
     const element = document.getElementById(id.toString())
     element?.classList.toggle('hidden')
   }
-  addMovieFavorites(){
-    console.log(this.user.getUser)
-  } 
+  insertFavorite(){
+    const item_id = this.item.movieId
+    console.log(`${item_id}`)
+  }
 }

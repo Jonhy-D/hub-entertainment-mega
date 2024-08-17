@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private readonly URL = 'http://localhost:3000'
+  private readonly URL = 'http://localhost:5282'
   constructor(private http: HttpClient) {}
 
   sendCredentials(email:string, password:string): Observable <any>{
@@ -16,4 +16,5 @@ export class AuthService {
     }
     return this.http.post(`${this.URL}/auth`, body)
   }
+
 }

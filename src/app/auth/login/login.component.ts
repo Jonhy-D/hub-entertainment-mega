@@ -12,9 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent{
   errorSession: boolean = false;
   formLogin: FormGroup = new FormGroup({});
-  userId_: number = 0;
   constructor(private authService: AuthService, private cookie:CookieService, private router:Router) {}
-
   ngOnInit():void{
     this.formLogin = new FormGroup({
       email: new FormControl('',[
@@ -35,9 +33,7 @@ export class LoginComponent{
       .subscribe({
         next: (v) => {
           console.log("User logged in successfully")
-          const {email_address, userId} = v
-          this.cookie.set('token',email_address,3, '/')
-          this.userId_ = userId
+          this.cookie.set('token',v,3, '/')
           this.router.navigate(['./'])
         }
         ,
@@ -47,9 +43,4 @@ export class LoginComponent{
         }
       })
   }
-
-  getUser(): any{
-    return console.log(this.userId_)
-  }
-
 }

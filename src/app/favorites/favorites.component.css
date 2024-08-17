@@ -3,7 +3,6 @@ section{
     flex-direction: column;
     align-items: center;
     width: 1200px;
-    height: 100dvh;
 }
 
 app-header{
@@ -14,4 +13,19 @@ app-header{
     z-index: 50;
     top: 0;
     height: 70px;
+}
+
+.movies-favorites{
+    height: 800px;
+    width: 1200px;
+    margin-bottom: 20px;
+}
+
+.series-favorites{
+    height: 800px;
+    width: 1200px;
+}
+
+h2{
+    margin-left: 10px;
 }

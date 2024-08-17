@@ -23,7 +23,7 @@ export interface ItemSerie {
   providedIn: 'root'
 })
 export class ItemService {
-  private readonly URL = 'http://localhost:3000'
+  private readonly URL = 'http://localhost:5282'
   constructor(private http: HttpClient){}
 
   getItemsMovies(): Observable<any>{

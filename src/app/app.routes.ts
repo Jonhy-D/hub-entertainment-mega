@@ -5,6 +5,7 @@ import { sessionGuard } from './auth/guards/session.guard';
 import { SeriesComponent } from './series/series.component';
 import { MoviesComponent } from './movies/movies.component';
 import { FavoritesComponent } from './favorites/favorites.component';
+import { SettingsComponent } from './settings/settings.component';
 
 export const routes: Routes = [
     {
@@ -30,6 +31,11 @@ export const routes: Routes = [
     {
         path:'favorites',
         component: FavoritesComponent,
+        canActivate:[sessionGuard]
+    },
+    {
+        path:'settings',
+        component: SettingsComponent,
         canActivate:[sessionGuard]
     }
 
