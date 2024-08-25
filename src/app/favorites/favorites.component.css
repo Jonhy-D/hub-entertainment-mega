@@ -29,3 +29,28 @@ app-header{
 h2{
     margin-left: 10px;
 }
+
+.section-movies, .section-series{
+
+    width: 1200px;
+    height: 700px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    max-width: 1000px;
+    margin: 20px;
+}
+
+.hidden{
+    animation: fade-out .5s forwards;
+}
+
+@keyframes fade-out {
+    to{
+        display: none;
+        opacity: 0;
+    }
+}

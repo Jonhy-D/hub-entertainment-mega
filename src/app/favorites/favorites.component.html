@@ -2,8 +2,18 @@
     <app-header></app-header>
     <div class="movies-favorites">
         <h2>Series Favorites</h2>
+        <section class="section-movies">
+            @for(item of (itemsSeries$ | async); track item.serieId){
+                <app-item-serie [item]="item" [id]="item.serieId"></app-item-serie>
+            }
+        </section>
     </div>
     <div class="series-favorites">
         <h2>Movies Favorites</h2>
+        <section class="section-series">
+            @for(item of (itemsMovies$ | async); track item.movieId){
+                <app-item [item]="item" [id]="item.movieId"></app-item>
+            }
+        </section>
     </div>
 </section>

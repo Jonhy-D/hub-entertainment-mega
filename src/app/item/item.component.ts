@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {  ItemMovie} from '../item.service';
-import { LoginComponent } from '../auth/login/login.component';
+import { ItemMovie, ItemService} from '../item.service';
 
 @Component({
   selector: 'app-item',
@@ -13,7 +12,8 @@ import { LoginComponent } from '../auth/login/login.component';
 
 export class ItemComponent {
   @Input() item!: ItemMovie;
-  @Input() user!: LoginComponent;
+  userId = Number(document.cookie[document.cookie.length - 1])
+  constructor(private itemService: ItemService){}
 
   toggleWatch(){
     alert(`Your are watching ${this.item.movie_title}`)
@@ -25,6 +25,15 @@ export class ItemComponent {
   }
   insertFavorite(){
     const item_id = this.item.movieId
-    console.log(`${item_id}`)
+    this.itemService.addMovieFavorites(item_id, this.userId)
+    .subscribe({
+      next: (v) => {
+        console.log("Movie added successfully", v)
+      }
+      ,
+      error: (err) => {
+        console.log('An error occurred', err)
+      }
+    })
   }
 }

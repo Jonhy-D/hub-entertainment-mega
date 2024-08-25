@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { ItemSerie} from '../item.service';
+import { ItemSerie, ItemService} from '../item.service';
 import { ItemListSeriesComponent } from '../item-list-series/item-list-series.component';
 
 @Component({
@@ -12,6 +12,10 @@ import { ItemListSeriesComponent } from '../item-list-series/item-list-series.co
 })
 export class ItemSerieComponent {
   @Input() item!: ItemSerie;
+
+  userId = Number(document.cookie[document.cookie.length - 1])
+  constructor(private itemService: ItemService){}
+
   toggleWatch(){
     alert(`Your are watching ${this.item.serie_title}`)
   }
@@ -21,7 +25,17 @@ export class ItemSerieComponent {
     element?.classList.toggle('hidden')
   }
 
-  addSerieFavorites(){
-    alert("Añadiendo a favoritos")
-  }  
+  insertFavorite(){
+    const item_id = this.item.serieId
+    this.itemService.addSerieFavorites(item_id, this.userId)
+    .subscribe({
+      next: (v) => {
+        console.log("Serie added successfully", v)
+      }
+      ,
+      error: (err) => {
+        console.log('An error occurred', err)
+      }
+    })
+  }
 }

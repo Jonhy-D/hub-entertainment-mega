@@ -34,6 +34,20 @@ export class ItemService {
     return this.http.get(`${this.URL}/series`, {})
   }
 
+  getItemsMoviesFav(userId:number): Observable<any>{
+    const body ={
+      "userId": userId
+    }
+    return this.http.post(`${this.URL}/moviesFav`, body)
+  }
+
+  getItemsSeriesFav(userId:number): Observable<any>{
+    const body ={
+      "userId": userId
+    }
+    return this.http.post(`${this.URL}/seriesFav`, body)
+  }
+
   addMovieFavorites(movieId:number, userId:number): Observable<any>{
     const body = {
       "movieId": movieId,
